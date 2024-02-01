@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1706773894184,
+    "name": "Mr. Nikesh",
+    "email": "nikesh12038rr99888@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "password": "$2b$10$v.myC8u672ac.o6lrTA5ZuRsHzi6eaw6tt3MSURuiFoOGN3l/iDiC",
+    "role": "admin"
+  },
+  {
+    "id": 1706778564239,
+    "name": "Basanta Rai",
+    "email": "basanta1@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "password": "$2b$10$5xGbxaYJd9.aA/PJ5chXVeCVkH7eooI7rvlAS5nIvw5PO97mFEM1O",
+    "role": "admin"
+  }
+]

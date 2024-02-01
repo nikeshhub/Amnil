@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1706452165528,
+    "name": "Nikeshhhhh ",
+    "email": "nikeshsapkota202@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "hashedPassword": "$2b$10$ne0QDat7g0hqsa1ln3TdNuqsvQ0GnZX0wMxMqGXVvdk.nhQdqheDC",
+    "password": "nikesh1234",
+    "role": "admin"
+  },
+  {
+    "id": 1706452219955,
+    "name": "Nikesh Sapkota",
+    "email": "nikeshsapkota2021@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "password": "$2b$10$fsrkHso1RC1QkPE73OfDreP81q.zFrmAVqubsyDGnNw4vtd4Fn0YO"
+  },
+  {
+    "id": 1706452272397,
+    "name": "Nikesh Sapkota",
+    "email": "nikeshsapkota2021@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "password": "$2b$10$LagE4pChQo5XbB4AuUIlEOVpSO8tePR8xEh5OaioS648dutgnzy5K",
+    "role": "admin"
+  },
+  {
+    "id": 1706459222630,
+    "name": "Mr. Nikesh",
+    "email": "nikeshsapkota2@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "password": "$2b$10$DY9nMo52ljiXx5Y23r8MvevQNh895hpPy2782c4zwc04GRzAV5Wgq",
+    "role": "admin"
+  },
+  {
+    "id": 1706460118958,
+    "name": "Nikeshhhhh ",
+    "email": "nikeshsapkota@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "password": "$2b$10$qgd/86A2DOMROuB4V57IeOJit246eyLGYdQ6/zyp6mUWeqjzJtG6.",
+    "role": "customer"
+  },
+  {
+    "id": 1706463453892,
+    "name": "Mr. Nikesh",
+    "email": "nikesh@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "password": "$2b$10$tiI8LDPWJZg5a3yrm5R5te6WdKpedlnVFLKNsHD9t3D5eLyxb7xju",
+    "role": "admin"
+  },
+  {
+    "id": 1706772042030,
+    "name": "Mr. Nikesh",
+    "email": "nikesh1203885@gmail.com",
+    "phoneNumber": "9815988535",
+    "address": "Jorpati",
+    "password": "$2b$10$chiqODfLL5e9EZkrVc7UT.Wajt9q8wSxbyi.ZIJ5IEnFXszANt222",
+    "role": "admin"
+  }
+]
