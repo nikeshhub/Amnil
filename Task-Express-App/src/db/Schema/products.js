@@ -22,6 +22,7 @@ const productSchema = Schema(
       type: String,
       required: [true, "product_type is required"],
     },
+    photos: [{ type: String }],
   },
   { timestamps: true }
 );

@@ -32,6 +32,8 @@ if (process.env.STORE_TO === "DB") {
   throw new Error("Invalid STORE_TO value");
 }
 
+app.use(express.static("./public"));
+
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
 });

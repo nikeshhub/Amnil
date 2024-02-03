@@ -10,10 +10,14 @@ import {
   searchProducts,
   updateProducts,
 } from "../Controller/products.js";
+import upload from "../../Middlewares/upload.js";
 
 let productRouter = Router();
 
-productRouter.route("/").post(createProduct).get(getProducts);
+productRouter
+  .route("/")
+  .post(upload.array("files", 5), createProduct)
+  .get(getProducts);
 
 productRouter.route("/search").get(searchProducts);
 

@@ -2,9 +2,25 @@ import { Product } from "../Model/model.js";
 
 export const createProduct = async (req, res) => {
   try {
-    const data = req.body;
+    let { name, description, price, quantity, product_type } = req.body;
+    console.log(name);
+
+    let photos = req.files.map((value, i) => {
+      return `localhost:8000/${value.filename}`;
+    });
+
+    // const photos = req.files;
+    console.log(photos);
     //save to database
-    const product = await Product.create(data);
+    const product = await Product.create({
+      name,
+      price,
+      quantity,
+      description,
+      product_type,
+      photos,
+    });
+    // console.log(product);
 
     res.json({
       success: true,
