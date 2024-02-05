@@ -3,8 +3,6 @@ import path from "path";
 
 let limit = {
   fileSize: 1024 * 1024 * 2, //2Mb
-  // the max file size (in bytes)
-  // 1kb equal to 1024
 };
 
 let storage = multer.diskStorage({

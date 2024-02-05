@@ -85,7 +85,7 @@ export const loginUser = async (req, res) => {
       const isValidPassword = await bcrypt.compare(password, user.password);
       if (isValidPassword) {
         let infoObj = {
-          id: user.id,
+          _id: user.id,
         };
 
         let expiryInfo = {

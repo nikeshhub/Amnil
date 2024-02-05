@@ -10,8 +10,9 @@ const isAuthenticated = async (req, res, next) => {
     // console.log(token);
     //verify token
     let infoObj = await jwt.verify(token, process.env.SECRET_KEY);
-    // console.log(infoObj);
+    console.log(infoObj);
     //send id to other
+
     req._id = infoObj._id;
     next();
   } catch (error) {

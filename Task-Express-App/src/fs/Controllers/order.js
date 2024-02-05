@@ -23,7 +23,8 @@ const writeOrders = async (data) => {
 
 export const addToCart = async (req, res) => {
   try {
-    const id = req.id;
+    const id = req._id;
+    // console.log(id);
 
     const { productId, quantity, price } = req.body;
 
@@ -50,7 +51,8 @@ export const addToCart = async (req, res) => {
 // API to view the cart
 export const getCart = async (req, res) => {
   try {
-    const id = req.id;
+    const id = req._id;
+    console.log(id);
 
     // Check if the user has a cart, if not, create an empty one
     if (!carts[id]) {
@@ -65,7 +67,7 @@ export const getCart = async (req, res) => {
 
 export const makeOrder = async (req, res) => {
   try {
-    const id = req.id;
+    const id = req._id;
     console.log(id);
     console.log(carts[id]);
 
@@ -93,6 +95,7 @@ export const makeOrder = async (req, res) => {
 
     // Create an order
     const order = {
+      userID: id,
       orderId,
       products: carts[id],
       totalPrice,

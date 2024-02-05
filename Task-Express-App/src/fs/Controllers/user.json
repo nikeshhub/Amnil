@@ -1,20 +1,20 @@
 [
   {
-    "id": 1706773894184,
-    "name": "Mr. Nikesh",
-    "email": "nikesh12038rr99888@gmail.com",
+    "id": "65c0959f3659b562fc306d36",
+    "name": "Nikesh Sapkota",
+    "email": "nikeshsapkota@gmail.com",
     "phoneNumber": "9815988535",
     "address": "Jorpati",
-    "password": "$2b$10$v.myC8u672ac.o6lrTA5ZuRsHzi6eaw6tt3MSURuiFoOGN3l/iDiC",
+    "password": "$2b$10$/qcp38k2I8g6n.NoVv2ineif7EmniYE0URx1/RaopRkqoIJ022veC",
     "role": "admin"
   },
   {
-    "id": 1706778564239,
-    "name": "Basanta Rai",
-    "email": "basanta1@gmail.com",
+    "id": 1707121665331,
+    "name": "Nikesh Sapkota",
+    "email": "nikeshsapkota1@gmail.com",
     "phoneNumber": "9815988535",
     "address": "Jorpati",
-    "password": "$2b$10$5xGbxaYJd9.aA/PJ5chXVeCVkH7eooI7rvlAS5nIvw5PO97mFEM1O",
-    "role": "admin"
+    "password": "$2b$10$g6QTlLpHEG9kqKTjceBm.ODxQ0kOvioMPXZKaRDYkAGvrxPltPbTS",
+    "role": "customer"
   }
 ]

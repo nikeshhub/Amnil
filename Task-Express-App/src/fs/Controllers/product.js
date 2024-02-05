@@ -22,7 +22,20 @@ const writeProducts = async (data) => {
 
 export const createProduct = async (req, res) => {
   try {
-    const newData = req.body;
+    let { name, description, price, quantity, product_type } = req.body;
+    console.log(name);
+
+    let photos = req.files.map((value, i) => {
+      return `localhost:8000/${value.filename}`;
+    });
+    const newData = {
+      name,
+      description,
+      price,
+      quantity,
+      product_type,
+      photos,
+    };
     console.log(newData);
 
     //read previous products

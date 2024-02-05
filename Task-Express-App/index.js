@@ -21,8 +21,8 @@ dotenv.config();
 if (process.env.STORE_TO === "DB") {
   app.use("/user", userRouter);
   app.use("/product", productRouter);
-  app.use("/cart", isAuthenticated, cartRouter);
-  app.use("/order", isAuthenticated, orderRouter);
+  app.use("/cart", cartRouter);
+  app.use("/order", orderRouter);
 } else if (process.env.STORE_TO === "FS") {
   app.use("/user", fsUserRouter);
   app.use("/product", fsproductRouter);

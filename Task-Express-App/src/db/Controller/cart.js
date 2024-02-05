@@ -4,6 +4,7 @@ export const addToCart = async (req, res) => {
   try {
     //get id from authentication
     const userId = req._id;
+    console.log(userId);
 
     const { productId, quantity, price } = req.body;
 
@@ -35,8 +36,10 @@ export const getCart = async (req, res) => {
   try {
     //get id from authentication
     const userId = req._id;
+    console.log(userId);
     //find cart for that respective user
     const cart = await Cart.findOne({ userId });
+    console.log(cart);
     // console.log(cart.items);
     //if no cart, return empty array
     if (!cart) {
