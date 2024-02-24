@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Products</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- sidebar %>
+    <h1 class="text-3xl text-center p-8">Add products</h1>
+    <form
+      enctype="multipart/form-data"
+      action="/admin/products/add"
+      method="post"
+      class="max-w-md mx-auto mt-8 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+    >
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+          >Product Name</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="price" class="block text-gray-700 text-sm font-bold mb-2"
+          >Price</label
+        >
+        <input
+          type="text"
+          id="price"
+          name="price"
+          required
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div class="mb-4">
+        <label
+          for="description"
+          class="block text-gray-700 text-sm font-bold mb-2"
+          >Description:</label
+        >
+        <input
+          type="text"
+          id="description"
+          name="description"
+          required
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="quantity" class="block text-gray-700 text-sm font-bold mb-2"
+          >Quantity:</label
+        >
+        <input
+          type="text"
+          id="quantity"
+          name="quantity"
+          required
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div class="mb-4">
+        <label
+          for="product_type"
+          class="block text-gray-700 text-sm font-bold mb-2"
+          >Product Type:</label
+        >
+        <input
+          type="text"
+          id="product_type"
+          name="product_type"
+          required
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="files" class="block text-gray-700 text-sm font-bold mb-2"
+          >Photos:</label
+        >
+        <input
+          type="file"
+          id="files"
+          name="files"
+          required
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="block mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      >
+        Add Products
+      </button>
+    </form>
+  </body>
+</html>

@@ -9,9 +9,6 @@ dotenv.config();
 
 const cartRouter = Router();
 
-cartRouter
-  .route("/")
-  .post(isAuthenticated, isAuthorized(["customer"]), addToCart)
-  .get(isAuthenticated, isAuthorized(["customer"]), getCart);
+cartRouter.route("/").get(isAuthenticated, getCart);
 
 export default cartRouter;

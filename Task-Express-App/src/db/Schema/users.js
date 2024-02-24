@@ -25,6 +25,7 @@ const userSchema = Schema(
     },
     role: {
       type: String,
+      default: "customer",
       required: [true, "role is required"],
     },
   },

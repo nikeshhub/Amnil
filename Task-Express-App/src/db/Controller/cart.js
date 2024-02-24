@@ -8,6 +8,10 @@ export const addToCart = async (req, res) => {
 
     const { productId, quantity, price } = req.body;
 
+    console.log(productId);
+    console.log(quantity);
+    console.log(price);
+
     // see if user has a cart
     const existingCart = await Cart.findOne({ userId });
 
@@ -23,10 +27,9 @@ export const addToCart = async (req, res) => {
       });
     }
 
-    res.json({
-      success: true,
-      message: "Product added to cart successfully",
-    });
+    res.send(
+      `<script>alert("Product added to cart successfully!"); window.location.href = "/product";</script>`
+    );
   } catch (error) {
     res.json({ success: false, error: error.message });
   }
@@ -38,15 +41,16 @@ export const getCart = async (req, res) => {
     const userId = req._id;
     console.log(userId);
     //find cart for that respective user
-    const cart = await Cart.findOne({ userId });
-    console.log(cart);
-    // console.log(cart.items);
-    //if no cart, return empty array
+    const cart = await Cart.findOne({ userId }).populate("items.productId");
     if (!cart) {
-      return res.json([]);
+      return res.render("cart", { cart: [], totalPrice: 0 });
     }
+    const totalPrice = cart.items.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
 
-    res.json({ success: true, data: cart.items });
+    res.render("cart", { cart: cart.items, totalPrice });
   } catch (error) {
     res.json({ success: false, error: error.message });
   }

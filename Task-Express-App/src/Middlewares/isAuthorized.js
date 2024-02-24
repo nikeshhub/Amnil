@@ -18,7 +18,7 @@ const isAuthorized = (roles) => {
   return async (req, res, next) => {
     try {
       let UserId = req._id;
-      console.log(UserId);
+      // console.log(UserId);
 
       const fsUsers = await readUsers();
 
@@ -26,17 +26,17 @@ const isAuthorized = (roles) => {
 
       if (process.env.STORE_TO === "DB") {
         user = await User.findById(UserId);
-        console.log(user);
+        // console.log(user);
       } else if (process.env.STORE_TO === "FS") {
         console.log("h");
         user = fsUsers.find((value) => value.id === UserId);
-        console.log(user);
+        // console.log(user);
       }
 
-      console.log(user);
+      // console.log(user);
       let userRole = user.role;
-      console.log(userRole);
-      console.log(roles);
+      // console.log(userRole);
+      // console.log(roles);
       if (roles.includes(userRole)) {
         next();
       } else {

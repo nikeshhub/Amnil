@@ -1,0 +1,84 @@
+<!-- adminUsers.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Customers</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- sidebar %>
+
+    <div class="container ml-64 p-8 flex justify-between items-center">
+      <!-- Adjusted top padding and added flex utility classes -->
+      <h1 class="text-3xl font-bold">Customers</h1>
+      <!-- Removed top margin -->
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Add Users
+      </button>
+    </div>
+    <div class="container ml-64 p-5">
+      <!-- Adjusted top padding -->
+      <table class="min-w-full divide-y divide-gray-200 text-sm">
+        <!-- Adjusted font size -->
+        <thead class="bg-gray-50">
+          <tr>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
+              Name
+            </th>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
+              Email
+            </th>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
+              Phone Number
+            </th>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
+              Address
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <% users.forEach(user => { %>
+          <tr>
+            <td class="px-6 py-6 text-md whitespace-nowrap">
+              <%= user.name %>
+            </td>
+            <td class="px-6 py-6 text-md whitespace-nowrap">
+              <%= user.email %>
+            </td>
+            <td class="px-6 py-6 text-md whitespace-nowrap">
+              <%= user.phoneNumber %>
+            </td>
+            <td class="px-6 py-6 text-md whitespace-nowrap">
+              <%= user.address %>
+            </td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

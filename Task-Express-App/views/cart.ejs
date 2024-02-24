@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carts</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <%-navbar %>
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-semibold mb-4">Your Shopping Cart</h1>
+
+      <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+        <h2 class="text-xl font-semibold mb-2">Cart Items</h2>
+        <ul>
+
+          <% cart.map(item => { %>
+          <li
+            class="flex items-center justify-between border-b border-gray-300 py-2"
+          >
+            <div class="flex items-center">
+              <img
+                src="<%= item.productId.photos[0] %>"
+                alt="Product Image"
+                class="mr-5 w-20 h-20, object-contain"
+              />
+              <span class="font-semibold"><%= item.productId.name %></span>
+
+            </div>
+            <span>x<%= item.quantity %></span>
+            <span class="font-semibold"
+              >Rs.<%= (item.price * item.quantity)%></span
+            >
+
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+
+
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <h2 class="text-xl font-semibold mb-2">Cart Summary</h2>
+        <div class="flex justify-between mb-2">
+          <span class="font-semibold">Subtotal:</span>
+
+          <span class="font-semibold">Rs. <%= totalPrice%></span>
+
+        </div>
+        <div class="flex justify-between mb-2">
+          <span class="font-semibold">Shipping:</span>
+          <span>Rs. 150</span>
+
+        </div>
+        <div class="flex justify-between mb-2">
+          <span class="font-semibold">Total:</span>
+          <span class="font-semibold"></spanclass>Rs. <%= totalPrice + 150%></span>
+
+        </div>
+
+        <form action="/order" method="post">
+        <button type="submit"
+          class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md"
+        >
+          Place order
+        </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -33,11 +33,9 @@ export const makeOrder = async (req, res) => {
     //clear the cart
     await Cart.findOneAndUpdate({ userId }, { items: [] });
 
-    res.json({
-      success: true,
-      message: "Order placed successfully",
-      data: order,
-    });
+    res.send(
+      `<script>alert("Thank you for your order! We have received your order. We will notify you again with the shipping times."); window.location.href = "/product";</script>`
+    );
   } catch (error) {
     res.json({ success: false, error: error.message });
   }

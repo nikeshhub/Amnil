@@ -22,6 +22,30 @@ const productSchema = Schema(
       type: String,
       required: [true, "product_type is required"],
     },
+    isLimited: {
+      type: Boolean,
+      default: false,
+    },
+    highestBid: {
+      bidder: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      },
+      bidAmount: Number,
+      notified: {
+        type: Boolean,
+        default: false,
+      },
+    },
+    expiryDate: {
+      type: Date,
+      required: [
+        function () {
+          return this.isLimited === true;
+        },
+        "expiryDate is required for limited products",
+      ],
+    },
     photos: [{ type: String }],
   },
   { timestamps: true }

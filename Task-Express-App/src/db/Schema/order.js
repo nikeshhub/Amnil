@@ -3,7 +3,8 @@ import { Schema } from "mongoose";
 
 const orderItemSchema = new Schema({
   productId: {
-    type: String,
+    type: Schema.Types.ObjectId,
+    ref: "Product",
     required: true,
   },
   quantity: {
@@ -18,7 +19,8 @@ const orderItemSchema = new Schema({
 
 const orderSchema = new Schema({
   userId: {
-    type: String,
+    type: Schema.Types.ObjectId,
+    ref: "User",
     required: true,
   },
   items: {

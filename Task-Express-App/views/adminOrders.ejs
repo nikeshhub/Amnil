@@ -1,0 +1,78 @@
+<!-- adminproducts.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Orders</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- sidebar %>
+
+    <div class="container ml-64 p-8 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Orders</h1>
+    </div>
+    <div class="container ml-64 p-5">
+      <table class="min-w-full divide-y divide-gray-200 text-sm">
+        <thead class="bg-gray-50">
+          <tr>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
+              Customer Name
+            </th>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
+              Total Price
+            </th>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
+              Products
+            </th>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
+              Created At
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <% orders.forEach(order => { %>
+          <tr>
+            <td class="px-6 py-6 text-md whitespace-nowrap">
+              <%= order.userId.name %>
+            </td>
+            <td class="px-6 py-6 text-md whitespace-nowrap">
+              <%= order.totalPrice %>
+            </td>
+            <td class="px-6 py-6 text-md whitespace-nowrap">
+              <% order.items.forEach(item => { %> <%= item.productId ?
+              item.productId.name : 'Product not found' %> <% }); %>
+            </td>
+            <td
+              class="px-6 py-6 text-md whitespace-nowrap max-w-xs overflow-hidden overflow-ellipsis"
+            >
+              <%= order.date %>
+            </td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

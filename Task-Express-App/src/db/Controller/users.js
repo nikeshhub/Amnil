@@ -6,26 +6,44 @@ import { User } from "../Model/model.js";
 dotenv.config();
 
 export let createUser = async (req, res) => {
-  let data = req.body;
+  let { name, email, phoneNumber, address, password } = req.body;
 
   try {
-    //hash password
-    const hashedPassword = await bcrypt.hash(data.password, 10);
-    data.password = hashedPassword;
-    //save to database
-    let result = await User.create(data);
+    const existingUser = await User.findOne({ email: email });
+    try {
+    } catch (error) {}
+    if (!existingUser) {
+      const hashedPassword = await bcrypt.hash(password, 10);
+      password = hashedPassword;
 
-    res.status(201).json({
-      success: true,
-      message: "Successfully added. Verification email sent.",
-      data: result,
-    });
+      const data = {
+        name,
+        email,
+        phoneNumber,
+        address,
+        password,
+      };
+      //save to database
+
+      let result = await User.create(data);
+      console.log(result);
+
+      res.send(
+        `<script>alert("Registration successful!"); window.location.href = "/user/login";</script>`
+      );
+    } else {
+      res.send(
+        `<script>alert("User already exists"); window.location.href = "/user/register";</script>`
+      );
+    }
+    //hash password
   } catch (error) {
-    res.json({
-      success: false,
-      message: error.message,
-    });
+    res.render("error", { errorMessage: error.message });
   }
+};
+
+export let getRegisterPage = (req, res) => {
+  res.render("register");
 };
 
 export let loginUser = async (req, res) => {
@@ -52,12 +70,14 @@ export let loginUser = async (req, res) => {
           process.env.SECRET_KEY,
           expiryInfo
         );
-        res.json({
-          success: true,
-          message: "Login successful",
-          data: user,
-          token: verificationToken,
-        });
+        //store the token in cookie and send it to client side
+        res.cookie("token", verificationToken, { httpOnly: true });
+
+        if (email === "nikeshsapkota@gmail.com") {
+          res.send(`<script> window.location.href = "/admin";</script>`);
+        } else {
+          res.send(`<script> window.location.href = "/";</script>`);
+        }
       } else {
         let error = new Error("Password is wrong");
         throw error;
@@ -72,6 +92,10 @@ export let loginUser = async (req, res) => {
       message: error.message,
     });
   }
+};
+
+export let getLoginPage = async (req, res) => {
+  res.render("login");
 };
 
 export let readAllUsers = async (req, res) => {

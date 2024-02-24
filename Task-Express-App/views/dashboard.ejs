@@ -1,0 +1,69 @@
+<!-- layout.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- sidebar %>
+
+    <div class="ml-64 p-4">
+      <div class="container mx-auto mt-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Users</div>
+              <p class="text-gray-700 text-base"><%= userCount %> Users</p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <a
+                href="/users"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >See All</a
+              >
+            </div>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Products</div>
+              <p class="text-gray-700 text-base">
+                <%= productCount %> Products
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <a
+                href="/products"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >See All</a
+              >
+            </div>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Orders</div>
+              <p class="text-gray-700 text-base"><%= orderCount %> Orders</p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <a
+                href="/orders"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >See All</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

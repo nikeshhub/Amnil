@@ -2,6 +2,8 @@ import { Router } from "express";
 import {
   createUser,
   deleteUser,
+  getLoginPage,
+  getRegisterPage,
   loginUser,
   readAllUsers,
   readSpecificUser,
@@ -12,12 +14,13 @@ import isAuthorized from "../../Middlewares/isAuthorized.js";
 
 let userRouter = Router();
 
-userRouter
-  .route("/")
-  .post(createUser)
-  .get(isAuthenticated, isAuthorized(["admin"]), readAllUsers);
+// userRouter
+//   .route("/")
+//   .post(createUser)
+//   .get(isAuthenticated, isAuthorized(["admin"]), readAllUsers);
 
-userRouter.route("/login").post(loginUser);
+userRouter.route("/login").post(loginUser).get(getLoginPage);
+userRouter.route("/register").post(createUser).get(getRegisterPage);
 
 userRouter
   .route("/:id")

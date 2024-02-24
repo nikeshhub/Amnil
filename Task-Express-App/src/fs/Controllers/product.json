@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": 1707122495740,
+    "name": "Iphone",
+    "description": "lorem epsum",
+    "price": "4000",
+    "quantity": "1",
+    "product_type": "Electronics",
+    "photos": [
+      "localhost:8000/1707122495733iphone-x-pictures-45216.png",
+      "localhost:8000/1707122495738iphone-x-pictures-45216.png"
+    ]
+  },
+  {
+    "id": 1707222482653,
+    "name": "Iphone",
+    "description": "lorem epsum",
+    "price": "4000",
+    "quantity": "1",
+    "product_type": "Electronics",
+    "photos": [
+      "localhost:8000/1707222482648iphone-x-pictures-45216.png",
+      "localhost:8000/1707222482651iphone-x-pictures-45216.png"
+    ]
+  }
+]

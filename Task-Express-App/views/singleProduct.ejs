@@ -1,0 +1,79 @@
+<!-- product.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= product.name %></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- navbar %>
+
+    <div class="container mx-auto mt-10">
+      <div class="flex">
+        <div class="w-1/2">
+          <img
+            src="http://localhost:8000/<%= product.photos[0]%>"
+            alt="<%= product.name %>"
+            class="w-full mb-4"
+          />
+        </div>
+
+        <div class="w-1/2 pl-8">
+          <h2 class="text-4xl font-bold mb-4"><%= product.name %></h2>
+          <p class="text-gray-600 mb-4 font-semibold">
+            <span class="font-bold text-xl">Price:</span> <br />
+            Rs.<%= product.price %>
+          </p>
+          <p class="text-gray-600 mb-4">
+            <span class="font-bold text-xl">Description:</span> <br />
+            <%= product.description %>
+          </p>
+
+          <form
+            action="/product/cart"
+            method="post"
+            class="flex flex-col space-y-4 text-gray-700"
+          >
+            <input
+              type="hidden"
+              id="productId"
+              name="productId"
+              value="<%= product._id %>"
+            />
+            <input
+              type="hidden"
+              id="price"
+              name="price"
+              value="<%= product.price %>"
+            />
+            <label for="quantity" class="font-semibold text-xl"
+              >Quantity:</label
+            >
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              value="1"
+              class="border border-gray-300 rounded-sm px-3 py-2 focus:outline-none focus:border-blue-500 w-50"
+            />
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Add to Cart
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
