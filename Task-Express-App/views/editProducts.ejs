@@ -14,7 +14,7 @@
     <%- sidebar %>
     <h1 class="text-3xl text-center p-8">Edit products</h1>
     <form
-      action="/admin/products/edit/<%= products._id %>?_method=PUT"
+      action="/admin/products/edit/<%= products.id %>?_method=PUT"
       method="post"
       class="max-w-md mx-auto mt-8 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
     >
@@ -39,7 +39,7 @@
           type="text"
           id="price"
           name="price"
-          value="<%- parseFloat(products.price).toFixed(2) %>"
+          value="<%- products.price %>"
           required
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />

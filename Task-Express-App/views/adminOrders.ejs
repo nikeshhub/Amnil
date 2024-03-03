@@ -55,19 +55,19 @@
           <% orders.forEach(order => { %>
           <tr>
             <td class="px-6 py-6 text-md whitespace-nowrap">
-              <%= order.userId.name %>
+              <%= order.user_name %>
             </td>
             <td class="px-6 py-6 text-md whitespace-nowrap">
-              <%= order.totalPrice %>
+              <%= order.total_price %>
             </td>
             <td class="px-6 py-6 text-md whitespace-nowrap">
-              <% order.items.forEach(item => { %> <%= item.productId ?
-              item.productId.name : 'Product not found' %> <% }); %>
+              <% order.order_items.forEach(item => { %> <%= item.product_name ?
+              item.product_name : 'Product not found' %> <% }); %>
             </td>
             <td
               class="px-6 py-6 text-md whitespace-nowrap max-w-xs overflow-hidden overflow-ellipsis"
             >
-              <%= order.date %>
+              <%= order.created_at %>
             </td>
           </tr>
           <% }); %>

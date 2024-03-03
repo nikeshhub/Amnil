@@ -1,10 +1,10 @@
-<!-- product.ejs -->
+<!-- products.ejs -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= product.name %></title>
+    <title><%= products.name %></title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -22,29 +22,29 @@
       <div class="flex">
         <div class="w-1/2">
           <img
-            src="http://localhost:8000/<%= product.photos[0]%>"
-            alt="<%= product.name %>"
+            src="http://localhost:8000/<%= products.photos%>"
+            alt="<%= products.name %>"
             class="w-full mb-4"
           />
         </div>
 
         <div class="w-1/2 pl-8">
-          <h2 class="text-4xl font-bold mb-4"><%= product.name %></h2>
+          <h2 class="text-4xl font-bold mb-4"><%= products.name %></h2>
           <p class="text-gray-600 mb-4 font-semibold">
             <span class="font-bold text-xl">Price:</span> <br />
-            Rs.<%= product.price %>
+            Rs.<%= products.price %>
           </p>
           <p class="text-gray-600 mb-4">
             <span class="font-bold text-xl">Description:</span> <br />
-            <%= product.description %>
+            <%= products.description %>
           </p>
           <p class="text-gray-600 mb-4">
             <span class="font-bold text-xl">Highest Bid:</span> <br />
-            <%= product.highestBid.bidAmount %>
+            <%= products.highest_bid_amount %>
           </p>
 
           <form
-            action="bid/<%= product._id %>"
+            action="bid/<%= products.id %>"
             method="post"
             class="flex flex-col space-y-4 text-gray-700"
           >

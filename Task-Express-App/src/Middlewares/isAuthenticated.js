@@ -8,7 +8,7 @@ const isAuthenticated = async (req, res, next) => {
     // Get token from cookies
     const token = req.cookies.token;
 
-    console.log(token);
+    // console.log(token);
 
     if (!token) {
       throw new Error("Token not found");

@@ -2,6 +2,8 @@ import nodemailer from "nodemailer";
 import cron from "node-cron";
 import { Product } from "../db/Model/model.js";
 import { loginUser } from "../db/Controller/users.js";
+import pool from "../../db.js";
+import logger from "./logger.js";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -49,28 +51,44 @@ const sendVerificationEmail = async (
 export const runCronJob = () => {
   cron.schedule("* * * * *", async () => {
     try {
-      console.log("checking for expiry");
-      const expiredProducts = await Product.find({
-        expiryDate: { $lte: new Date() },
-      }).populate("highestBid.bidder");
+      logger.log("info", "Checking for inspiry");
+
+      // console.log("Checking for expiry");
+
+      // Construct the SQL query to find expired products and their highest bidders
+      const query = `
+        SELECT p.id AS product_id,
+               p.name AS product_name,
+               p.photos AS product_photo,
+               p.highest_bidder AS bidder_id,
+               u.email AS bidder_email,
+               p.highest_bid_amount AS bid_amount
+        FROM product p
+        JOIN "user" u ON p.highest_bidder = u.id
+        WHERE p.expiry_date <= NOW()
+        AND p.win_notified = FALSE;
+      `;
+
+      // Execute the query
+      const { rows: expiredProducts } = await pool.query(query);
 
       // Iterate over each expired product
       for (const product of expiredProducts) {
-        const { highestBid } = product;
+        // Send email to the winner
+        const emailSent = await sendVerificationEmail(
+          product.bidder_email,
+          product.product_name,
+          product.bid_amount,
+          product.product_photo
+        );
 
-        if (highestBid && !highestBid.notified) {
-          // Send email to the winner
-          const emailSent = await sendVerificationEmail(
-            highestBid.bidder.email,
-            product.name,
-            highestBid.bidAmount,
-            product.photos[0]
-          );
-
-          // Mark the highest bid as notified
-          highestBid.notified = true;
-          await product.save();
-        }
+        // Update the product to mark the win as notified
+        const updateQuery = `
+          UPDATE product
+          SET win_notified = TRUE
+          WHERE id = $1;
+        `;
+        await pool.query(updateQuery, [product.product_id]);
       }
     } catch (error) {
       console.error(

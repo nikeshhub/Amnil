@@ -1,0 +1,16 @@
+{"level":"info","message":"Products fetched successfully","timestamp":"2024-03-02T17:27:59.034Z"}
+{"level":"error","message":"relation \"products\" does not exist","timestamp":"2024-03-02T17:31:02.997Z"}
+{"level":"info","message":"Products fetched successfully","timestamp":"2024-03-02T17:31:46.153Z"}
+{"level":"info","message":"Products fetched successfully","timestamp":"2024-03-02T17:33:16.478Z"}
+{"level":"error","message":"relation \"produc\" does not exist","timestamp":"2024-03-02T17:33:29.962Z"}
+[32minfo[39m: Products fetched successfully {"timestamp":"2024-03-02T17:40:08.174Z"}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-02T17:41:10.475Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for inspiry',
+  timestamp: '2024-03-03T06:23:00.903Z'
+}
