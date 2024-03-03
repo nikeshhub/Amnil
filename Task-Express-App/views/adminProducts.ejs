@@ -64,6 +64,12 @@
               scope="col"
               class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
             >
+              Status
+            </th>
+            <th
+              scope="col"
+              class="px-4 py-4 text-left text-xs font-large text-gray-500 uppercase tracking-wider"
+            >
               Actions
             </th>
           </tr>
@@ -73,7 +79,7 @@
           <tr>
             <td class="px-2 py-2 whitespace-nowrap">
               <img
-                src="http://localhost:8000/<%= product.photos[0] %>"
+                src="http://localhost:8000/<%= product.photos %>"
                 alt="product Photo"
                 class="h-20 w-auto"
               />
@@ -90,13 +96,17 @@
               <%= product.description %>
             </td>
             <td class="px-6 py-6 text-md whitespace-nowrap">
+              <%= product.is_limited ? 'Auction Product' : 'Normal' %>
+            </td>
+
+            <td class="px-6 py-6 text-md whitespace-nowrap">
               <a
-                href="/admin/products/edit/<%= product._id %>"
+                href="/admin/products/edit/<%= product.id %>"
                 class="text-indigo-600 hover:text-indigo-900"
                 >Edit</a
               >
               <form
-                action="/admin/products/delete/<%= product._id %>?_method=DELETE"
+                action="/admin/products/delete/<%= product.id %>?_method=DELETE"
                 method="POST"
                 class="inline"
               >
@@ -105,7 +115,7 @@
                 </button>
               </form>
               <form
-                action="/admin/products/limited/<%= product._id %>?_method=PUT"
+                action="/admin/products/limited/<%= product.id %>?_method=PUT"
                 method="POST"
                 class="inline"
               >

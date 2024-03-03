@@ -19,6 +19,13 @@ import cookieParser from "cookie-parser";
 import sidebarMiddleware from "./src/Middlewares/sidebarMiddleware.js";
 import adminRouter from "./src/db/Routes/admin.js";
 import { runCronJob } from "./src/utils/auctionWinnerEmail.js";
+import pool from "./db.js";
+import pgUserRouter from "./src/postgres/Routes/user.js";
+import pgProductRouter from "./src/postgres/Routes/products.js";
+import { getFeaturedProducts } from "./src/postgres/Controllers/pages.js";
+import pgCartRouter from "./src/postgres/Routes/cart.js";
+import pgOrderRouter from "./src/postgres/Routes/order.js";
+import pgAdminRouter from "./src/postgres/Routes/admin.js";
 
 // console.log("Hi");
 
@@ -49,6 +56,13 @@ if (process.env.STORE_TO === "DB") {
   app.use("/product", fsproductRouter);
   app.use("/cart", fsCartRouter);
   app.use("/order", fsorderRouter);
+} else if (process.env.STORE_TO === "PG") {
+  app.get("/", getFeaturedProducts);
+  app.use("/user", pgUserRouter);
+  app.use("/product", pgProductRouter);
+  app.use("/cart", pgCartRouter);
+  app.use("/order", pgOrderRouter);
+  app.use("/admin", pgAdminRouter);
 } else {
   throw new Error("Invalid STORE_TO value");
 }
@@ -58,5 +72,13 @@ app.use(express.static("./public"));
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
 });
-runCronJob()
+runCronJob();
+
+pool.query("SELECT NOW()", (err, res) => {
+  if (err) {
+    console.error("Error connecting to PostgreSQL:", err.stack);
+  } else {
+    console.log("Connected to PostgreSQL at:", res.rows[0].now);
+  }
+});
 connectToMongoDb();
