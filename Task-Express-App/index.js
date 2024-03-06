@@ -26,6 +26,8 @@ import { getFeaturedProducts } from "./src/postgres/Controllers/pages.js";
 import pgCartRouter from "./src/postgres/Routes/cart.js";
 import pgOrderRouter from "./src/postgres/Routes/order.js";
 import pgAdminRouter from "./src/postgres/Routes/admin.js";
+import logger from "./src/utils/logger.js";
+import { swaggerServe, swaggerSetup } from "./swagger.js";
 
 // console.log("Hi");
 
@@ -36,6 +38,9 @@ app.use(cookieParser());
 app.use(methodOverride("_method"));
 const port = process.env.PORT;
 dotenv.config();
+
+// Serve Swagger UI
+app.use("/api-docs", swaggerServe, swaggerSetup);
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
@@ -70,15 +75,18 @@ if (process.env.STORE_TO === "DB") {
 app.use(express.static("./public"));
 
 app.listen(port, () => {
-  console.log(`Server is running on ${port}`);
+  logger.log("info", `Server is running on ${port}`);
+  // console.log(`Server is running on ${port}`);
 });
 runCronJob();
 
 pool.query("SELECT NOW()", (err, res) => {
   if (err) {
-    console.error("Error connecting to PostgreSQL:", err.stack);
+    logger.log("error", "Error connecting to PostgreSQL:", err.stack);
+    // console.error("Error connecting to PostgreSQL:", err.stack);
   } else {
-    console.log("Connected to PostgreSQL at:", res.rows[0].now);
+    logger.log("info", "Connected to PostgreSQL ", res.rows[0].now);
+    // console.log("Connected to PostgreSQL at:", res.rows[0].now);
   }
 });
 connectToMongoDb();

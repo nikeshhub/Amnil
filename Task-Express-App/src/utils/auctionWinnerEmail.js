@@ -42,16 +42,18 @@ const sendVerificationEmail = async (
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log("Auction winning mail sent successfully.");
+    logger.log("info", "Auction winning mail sent successfully.");
+    // console.log("Auction winning mail sent successfully.");
   } catch (error) {
-    console.error("Error sending verification email:", error);
+    logger.log("error", "Error sending verification email:", error);
+    // console.error("Error sending verification email:", error);
     throw error;
   }
 };
 export const runCronJob = () => {
   cron.schedule("* * * * *", async () => {
     try {
-      logger.log("info", "Checking for inspiry");
+      logger.log("info", "Checking for expiry");
 
       // console.log("Checking for expiry");
 
@@ -91,10 +93,11 @@ export const runCronJob = () => {
         await pool.query(updateQuery, [product.product_id]);
       }
     } catch (error) {
-      console.error(
-        "Error occurred while checking for expired auctions:",
-        error
-      );
+      logger.log("error", "Error occurred while checking for expired auctions:", error);
+      // console.error(
+      //   "Error occurred while checking for expired auctions:",
+      //   error
+      // );
     }
   });
 };

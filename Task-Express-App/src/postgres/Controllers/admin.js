@@ -1,4 +1,5 @@
 import pool from "../../../db.js";
+import logger from "../../utils/logger.js";
 
 export const getDashboard = async (req, res) => {
   try {
@@ -11,8 +12,10 @@ export const getDashboard = async (req, res) => {
     const orderCount = orderCountQuery.rows[0].count;
 
     res.render("dashboard", { userCount, productCount, orderCount });
+    logger.log("info", "Dashboard loaded successfully.");
   } catch (error) {
-    console.error("Error fetching counts:", error);
+    logger.log("error", "Error fetching counts:", error);
+    // console.error("Error fetching counts:", error);
     res.status(500).send("Internal Server Error");
   }
 };
@@ -25,9 +28,11 @@ export const getUsers = async (req, res) => {
       [role]
     );
     const users = usersQuery.rows;
-    console.log("users");
+    // console.log("users");
     res.render("adminUsers", { users });
+    logger.log("info", "Users loaded successfully.");
   } catch (error) {
+    logger.log("error", "Error fetching users:", error);
     res.status(500).send("Internal Server Error");
   }
 };
@@ -36,7 +41,9 @@ export const getProducts = async (req, res) => {
     const productsQuery = await pool.query("SELECT * FROM product");
     const products = productsQuery.rows;
     res.render("adminProducts", { products });
+    logger.log("info", "Products loaded successfully.");
   } catch (error) {
+    logger.log("error", "Error fetching products:", error);
     res.status(500).send("Internal Server Error");
   }
 };
@@ -74,8 +81,10 @@ export const getOrders = async (req, res) => {
     });
 
     res.render("adminOrders", { orders });
+    logger.log("info", "Orders loaded successfully.");
   } catch (error) {
-    console.error(error);
+    // console.error(error);
+    logger.log("error", "Error fetching orders:", error);
     res.status(500).send("Internal Server Error");
   }
 };

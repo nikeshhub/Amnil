@@ -1,9 +1,3 @@
-{"level":"info","message":"Products fetched successfully","timestamp":"2024-03-02T17:27:59.034Z"}
-{"level":"error","message":"relation \"products\" does not exist","timestamp":"2024-03-02T17:31:02.997Z"}
-{"level":"info","message":"Products fetched successfully","timestamp":"2024-03-02T17:31:46.153Z"}
-{"level":"info","message":"Products fetched successfully","timestamp":"2024-03-02T17:33:16.478Z"}
-{"level":"error","message":"relation \"produc\" does not exist","timestamp":"2024-03-02T17:33:29.962Z"}
-[32minfo[39m: Products fetched successfully {"timestamp":"2024-03-02T17:40:08.174Z"}
 {
   level: '\x1B[32minfo\x1B[39m',
   message: 'Products fetched successfully',
@@ -13,4 +7,3516 @@
   level: '\x1B[32minfo\x1B[39m',
   message: 'Checking for inspiry',
   timestamp: '2024-03-03T06:23:00.903Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for inspiry',
+  timestamp: '2024-03-03T06:24:00.982Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for inspiry',
+  timestamp: '2024-03-03T06:25:00.054Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for inspiry',
+  timestamp: '2024-03-03T06:26:00.130Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for inspiry',
+  timestamp: '2024-03-03T06:27:00.208Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for inspiry',
+  timestamp: '2024-03-03T06:28:00.282Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:05:00.346Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:06:00.835Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:07:00.933Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:08:00.046Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:10:00.372Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-03T11:10:55.129Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'Error fetching products',
+  timestamp: '2024-03-03T11:10:56.490Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:11:00.373Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'relation "produc" does not exist',
+  timestamp: '2024-03-03T11:11:10.446Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-03T11:11:26.934Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:12:00.807Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:13:00.611Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:14:00.396Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Login page loaded successfully',
+  timestamp: '2024-03-03T11:14:25.641Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Dashboard loaded successfully.',
+  timestamp: '2024-03-03T11:14:31.219Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products loaded successfully.',
+  timestamp: '2024-03-03T11:14:34.282Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Add products page loaded successfully',
+  timestamp: '2024-03-03T11:14:35.265Z'
+}
+{
+  length: 105,
+  name: 'error',
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '14',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1452',
+  routine: 'parserOpenTable',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'Error adding product: relation "produc" does not exist',
+  stack: 'error: relation "produc" does not exist\n' +
+    '    at /Users/nikeshsapkota/Desktop/Amnil/Task-Express-App/node_modules/pg-pool/index.js:45:11\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async createProduct (file:///Users/nikeshsapkota/Desktop/Amnil/Task-Express-App/src/postgres/Controllers/products.js:15:20)',
+  timestamp: '2024-03-03T11:15:12.801Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:16:00.469Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'Error adding product:',
+  timestamp: '2024-03-03T11:16:22.924Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'relation "produc" does not exist',
+  timestamp: '2024-03-03T11:16:56.230Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:17:00.585Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Product added successfully.',
+  timestamp: '2024-03-03T11:17:16.141Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products loaded successfully.',
+  timestamp: '2024-03-03T11:17:17.484Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products loaded successfully.',
+  timestamp: '2024-03-03T11:17:40.885Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:18:00.399Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:19:00.227Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:20:00.933Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:21:00.344Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:23:00.459Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:24:00.321Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:24:17.317Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:24:20.747Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:24:28.652Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:24:32.916Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:24:34.960Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:24:34.980Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:24:37.247Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:24:37.267Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T11:25:00.263Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:07.574Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:10.158Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:12.300Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:14.584Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:25:24.229Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:25:28.038Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:25:30.877Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:33.225Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:25:33.244Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:34.747Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL at:',
+  timestamp: '2024-03-03T11:25:34.767Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:38.301Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T11:25:38.322Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:39.023Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T11:25:39.043Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:40.273Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T11:25:40.293Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T11:25:48.146Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T11:25:48.166Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T16:54:30.769Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T16:54:30.805Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T16:54:32.963Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T16:54:32.983Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T16:55:00.994Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T16:55:13.854Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T16:55:13.877Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-03T16:55:25.967Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Login page loaded successfully',
+  timestamp: '2024-03-03T16:55:30.668Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T16:56:00.903Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T16:57:00.978Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T16:57:29.104Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T16:57:29.125Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T16:58:00.134Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T16:59:00.211Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:00:00.284Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:01:00.361Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:01:39.264Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:01:39.284Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:01:41.377Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:01:41.396Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:02:50.670Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:02:50.690Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:03:00.677Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:04:20.509Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:04:20.530Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:05:03.188Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:05:03.210Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:05:05.336Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:05:05.357Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:05:06.152Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:05:06.170Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:05:56.282Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:05:56.301Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:05:58.903Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:05:58.921Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:06:00.897Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:07:00.976Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:07:53.687Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:07:53.711Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:08:00.687Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:09:00.767Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:10:00.846Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:10:23.025Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:10:23.046Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:11:00.062Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:11:05.437Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:11:05.457Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:12:03.018Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:12:03.037Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-03T17:12:28.949Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-03T17:12:31.293Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:12:47.996Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:12:48.018Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-03T17:12:55.608Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:13:00.004Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:14:00.080Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:14:02.717Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:14:02.736Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:14:54.045Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:14:54.068Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:15:00.046Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:16:00.126Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:16:33.782Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:16:33.804Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:17:00.809Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:18:00.887Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:19:00.968Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:19:11.303Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:19:11.323Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:20:00.359Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:21:00.426Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:22:00.504Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:23:00.581Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:23:05.657Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:23:05.677Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'null value in column "quantity" of relation "product" violates not-null constraint',
+  timestamp: '2024-03-03T17:23:30.881Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:24:00.720Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:25:00.802Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:32:00.010Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:33:00.076Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:34:00.154Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:35:00.239Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:36:00.318Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:37:00.397Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:38:00.483Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:39:00.563Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:40:00.639Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:41:00.721Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:42:00.798Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:43:00.876Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:44:00.953Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:45:00.036Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:46:00.120Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:47:00.197Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:48:00.286Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:49:00.363Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:50:00.441Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:51:00.518Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:52:00.609Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:53:00.682Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:54:00.752Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:55:00.841Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:56:00.909Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:56:30.573Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:56:30.593Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Product added successfully.',
+  timestamp: '2024-03-03T17:56:57.935Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:57:00.599Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-03T17:57:18.663Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:57:48.288Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:57:48.308Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:58:00.293Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T17:58:17.048Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T17:58:17.070Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T17:59:00.093Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:00:00.168Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Login page loaded successfully',
+  timestamp: '2024-03-03T18:00:11.366Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Register page loaded successfully',
+  timestamp: '2024-03-03T18:00:13.453Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:01:00.244Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:02:00.315Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:02:46.331Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:02:46.354Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:03:00.336Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:03:36.000Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:03:36.022Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:04:00.020Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:05:00.095Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:06:00.170Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:06:16.543Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:06:16.565Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:07:00.588Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:07:39.271Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:07:39.296Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:08:00.290Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:09:00.368Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:09:32.790Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:09:32.810Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:10:00.818Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:11:00.899Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:11:41.182Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:11:41.205Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:11:48.716Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:11:48.734Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:11:52.623Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:11:52.644Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:11:54.402Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:11:54.423Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:12:00.487Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:12:00.507Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:12:05.178Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:12:05.202Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:12:05.634Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:12:05.657Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:13:00.691Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:14:00.773Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:15:00.844Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:16:00.926Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:17:00.009Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:20:00.238Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-03T18:20:01.590Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-03T18:20:01.611Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:21:00.647Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:22:00.721Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:23:00.801Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:24:00.881Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:25:00.960Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:26:00.041Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:27:00.123Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:28:00.200Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:29:00.275Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:30:00.352Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:31:00.430Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:32:00.506Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:33:00.583Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:34:00.662Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:35:00.734Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:36:00.814Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:37:00.892Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:38:00.968Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:39:00.047Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:40:00.123Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-03T18:41:00.199Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:48:33.384Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:48:33.418Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-04T06:48:42.309Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:49:00.408Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-04T06:49:27.551Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:50:00.482Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:51:00.548Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:51:38.136Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:51:38.156Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:51:49.450Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:51:49.470Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:51:57.311Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:51:57.332Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:52:04.240Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:52:04.263Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:52:22.711Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:52:22.732Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:52:32.317Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:52:32.338Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:52:34.097Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:52:34.118Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:52:41.488Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:52:41.510Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:52:52.589Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:52:52.609Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:52:54.947Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:52:54.969Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:52:58.138Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:52:58.160Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:53:00.333Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:53:00.355Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:53:02.600Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:53:02.626Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:53:03.366Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:53:03.387Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:53:09.686Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:53:09.708Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:53:20.236Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:53:20.257Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:53:22.330Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:53:22.353Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:53:24.032Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:53:24.053Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:53:24.565Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:53:24.586Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:54:00.603Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:08.218Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:08.239Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:17.728Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:17.747Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:18.862Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:18.885Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:35.072Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:35.092Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:40.572Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:40.593Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:42.811Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:42.830Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:43.760Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:43.781Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:44.278Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:44.302Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:54:55.890Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:54:55.912Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:55:00.886Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:55:56.269Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:55:56.290Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:55:57.290Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:55:57.309Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:56:00.284Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:57:00.360Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:58:00.437Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:58:17.368Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:58:17.390Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T06:59:00.411Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T06:59:11.055Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T06:59:11.077Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:00:00.105Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:01:00.174Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:02:00.247Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:03:00.323Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:04:00.399Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:04:24.190Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:04:24.209Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:05:00.224Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:05:14.801Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:05:14.821Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:06:00.844Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:07:00.917Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:07:19.711Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:07:19.731Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:07:20.782Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:07:20.806Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-04T07:07:32.851Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:08:00.820Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:09:00.891Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:10:00.968Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:11:00.035Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:11:15.620Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:11:15.641Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:11:58.282Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:12:00.670Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:12:58.646Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:12:58.672Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:13:00.638Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:13:09.551Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:13:09.573Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:13:13.565Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:13:13.586Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:13:35.526Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:13:35.549Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:13:44.798Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:13:44.819Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:13:47.055Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:13:47.077Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:13:49.378Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:13:49.399Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:13:57.627Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:13:57.648Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:13:59.721Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:13:59.745Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:14:00.712Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:02.143Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:02.165Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:07.383Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:07.407Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:13.141Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:13.163Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:16.361Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:16.384Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:21.412Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:21.433Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:24.146Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:24.166Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:31.897Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:31.918Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:41.824Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:41.846Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:14:51.083Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:14:51.104Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:15:38.063Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:15:38.084Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:15:51.941Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:16:00.082Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:16:04.103Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:16:53.044Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:17:00.154Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:17:31.489Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:17:31.510Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:17:36.584Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:17:36.605Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:17:38.583Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:17:38.603Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:17:39.602Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:17:39.624Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:17:46.189Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:17:46.211Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:17:48.985Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:17:49.007Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: undefined,
+  timestamp: '2024-03-04T07:17:52.257Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:17:52.258Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:18:00.992Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:18:02.806Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:18:02.830Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: undefined,
+  timestamp: '2024-03-04T07:18:04.486Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:18:04.487Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:19:00.868Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: undefined,
+  timestamp: '2024-03-04T07:19:52.629Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:19:52.630Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:20:00.937Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: undefined,
+  timestamp: '2024-03-04T07:20:11.600Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:20:11.600Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:21:00.009Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:22:00.088Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:23:00.162Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:23:38.239Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:23:38.260Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:23:39.646Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:23:39.667Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:23:40.407Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:23:40.427Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:24:00.420Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: undefined,
+  timestamp: '2024-03-04T07:24:11.030Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:24:11.030Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: undefined,
+  timestamp: '2024-03-04T07:24:39.585Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:25:00.492Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:25:22.312Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:25:22.331Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:25:22.901Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:25:22.922Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: undefined,
+  timestamp: '2024-03-04T07:25:28.547Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:25:28.547Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:25:46.385Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:25:46.406Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:25:47.430Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:25:47.452Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:25:51.964Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:25:51.986Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:25:56.464Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:25:56.485Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:25:56.942Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:25:56.964Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:25:59.145Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:26:00.935Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:27:00.004Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:27:05.317Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:27:31.835Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:27:31.856Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:27:34.683Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:27:34.704Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:27:37.461Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:27:37.484Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:27:39.444Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:27:39.466Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:27:41.854Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:27:41.877Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:27:44.001Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:27:44.022Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:27:46.662Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:27:46.687Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:27:47.468Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:27:47.489Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:27:50.649Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:28:00.473Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:29:00.545Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:30:00.619Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:30:37.138Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:30:37.158Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:31:00.158Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:32:00.228Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:33:00.303Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:34:00.375Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:34:22.541Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:34:22.565Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:34:56.052Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:34:56.072Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:35:00.047Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:37:22.000Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:37:22.021Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:37:57.974Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:37:57.995Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:38:00.969Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:39:00.039Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:40:00.109Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:41:00.186Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:42:50.360Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:42:50.382Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:43:00.363Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:43:44.631Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:43:44.652Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:44:00.642Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:44:09.785Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-04T07:44:31.803Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-04T07:44:46.128Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:45:00.713Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:45:22.227Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:45:22.249Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:45:30.776Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:45:30.798Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:45:41.740Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:45:41.763Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:45:43.916Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:45:43.937Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:07.204Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:07.226Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:13.506Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:13.528Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:17.149Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:17.170Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:22.409Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:22.431Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:24.303Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:24.326Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:27.188Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:27.209Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:27.680Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:27.702Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:32.377Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:32.397Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:43.313Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:43.335Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:47.839Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:47.861Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:48.906Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:48.925Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:50.772Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:50.795Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:46:53.799Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:46:53.820Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:47:00.797Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:47:09.545Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:47:09.568Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:47:14.730Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:47:14.752Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:47:16.160Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:47:16.182Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:47:18.055Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:47:18.076Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:47:20.496Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:47:20.517Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:47:21.405Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:47:21.428Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:48:00.440Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:49:00.510Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:49:34.435Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:49:34.457Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:49:40.138Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:49:40.162Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:49:47.303Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:49:47.325Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:50:00.309Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:57:14.378Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:57:14.398Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:58:00.426Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T07:58:27.311Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T07:58:27.335Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T07:59:00.339Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:00:00.416Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:01:00.497Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Login page loaded successfully',
+  timestamp: '2024-03-04T08:01:18.759Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:02:00.569Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:18:55.986Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:18:56.008Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:19:00.985Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-04T08:19:05.503Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:19:45.157Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:19:45.180Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:20:00.169Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:20:35.041Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:20:35.064Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:21:00.063Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:22:00.136Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:22:14.157Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:22:14.180Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:23:00.204Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:24:00.275Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:24:46.979Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:24:47.003Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:25:00.991Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:25:14.838Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:25:14.861Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Product added to cart successfully.',
+  timestamp: '2024-03-04T08:25:27.294Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:26:00.887Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Order placed successfully.',
+  timestamp: '2024-03-04T08:26:32.238Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:27:00.961Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:27:55.202Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:27:55.223Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:27:59.904Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:27:59.924Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:28:00.894Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:12.184Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:12.208Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:15.986Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:16.010Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:19.567Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:19.588Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:22.410Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:22.433Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:25.264Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:25.287Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:26.776Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:26.799Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:27.673Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:27.695Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:39.463Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:39.484Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:43.214Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:43.236Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:45.500Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:45.520Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:46.517Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:46.539Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:57.838Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:57.861Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-04T08:28:58.320Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-04T08:28:58.345Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:29:00.313Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-04T08:29:30.937Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-04T08:29:41.825Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:30:00.387Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:31:00.459Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:32:00.551Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:33:00.626Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:34:00.703Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:35:00.788Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:36:00.864Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-04T08:37:00.925Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-05T08:28:59.900Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-05T08:28:59.925Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:29:00.892Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:30:00.968Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Products fetched successfully',
+  timestamp: '2024-03-05T08:30:26.694Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: "Cannot read properties of undefined (reading 'password')",
+  timestamp: '2024-03-05T08:30:59.796Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:31:00.044Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: "Cannot read properties of undefined (reading 'password')",
+  timestamp: '2024-03-05T08:31:12.585Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:32:00.111Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:33:00.189Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:34:00.268Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:35:00.341Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:36:00.416Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:37:00.479Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:38:00.555Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:39:00.631Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:40:00.701Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:41:00.770Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:42:00.841Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:43:00.918Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:44:00.993Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:45:00.060Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:46:00.128Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:47:00.193Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:48:00.263Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:49:00.329Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:50:00.402Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:51:00.473Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:52:00.538Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:53:00.609Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:54:00.676Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:55:00.743Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:56:00.810Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:57:00.873Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:58:00.944Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T08:59:00.010Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:00:00.088Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:01:00.152Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:02:00.216Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:03:00.284Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:04:00.354Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:05:00.418Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:06:00.505Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:07:00.601Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:08:00.708Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:09:00.795Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:10:00.859Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:11:00.926Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:12:00.990Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:13:00.055Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:14:00.133Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:15:00.220Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:16:00.318Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:17:00.418Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:18:00.511Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:19:00.605Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:20:00.696Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:21:00.755Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:22:00.817Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:23:00.886Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:24:00.946Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:25:00.016Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:26:00.086Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:27:00.156Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-05T09:28:00.220Z'
 }

@@ -1,12 +1,17 @@
 import pool from "../../../db.js";
 import logger from "../../utils/logger.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export let getRegisterPage = (req, res) => {
   res.render("register");
+  logger.log("info", "Register page loaded successfully");
 };
 
 export let getLoginPage = (req, res) => {
   res.render("login");
+  logger.log("info", "Login page loaded successfully");
 };
 
 export const getFeaturedProducts = async (req, res) => {
@@ -37,8 +42,16 @@ export const getProducts = async (req, res) => {
       `SELECT * FROM "product" WHERE is_limited = false;`
     );
     const products = result.rows;
-    res.render("products", { products });
+    if (process.env.RESPONSE_TYPE === "JSON") {
+      return res.json({ success: true, products });
+    } else if (process.env.RESPONSE_TYPE === "EJS") {
+      res.render("products", { products });
+    } else {
+      logger.log("error", "Invalid response type");
+    }
+    logger.log("info", "Products fetched successfully");
   } catch (error) {
+    logger.log("error", error.message);
     res.json({
       success: false,
       error: error.message,
@@ -57,10 +70,13 @@ export const getSpecificProduct = async (req, res) => {
 
     if (product) {
       res.render("singleProduct", { product });
+      logger.log("info", "Product fetched successfully");
     } else {
+      logger.log("error", "No product with the id");
       throw new Error(`No product with the id ${id}`);
     }
   } catch (error) {
+    logger.log("error", error.message);
     res.json({
       success: false,
       error: error.message,
@@ -71,7 +87,7 @@ export const getSpecificProduct = async (req, res) => {
 export const getCart = async (req, res) => {
   try {
     const userId = req._id;
-    console.log("UserID", userId);
+    // console.log("UserID", userId);
 
     const query = `
       SELECT p.photos, p.name, p.price, c.quantity
@@ -90,16 +106,19 @@ export const getCart = async (req, res) => {
       (total, item) => total + item.price * item.quantity,
       0
     );
-    console.log(cartItems);
+    // console.log(cartItems);
 
     res.render("cart", { cart: cartItems, totalPrice });
+    logger.log("info", "Cart fetched successfully");
   } catch (error) {
+    logger.log("error", error.message);
     res.json({ success: false, error: error.message });
   }
 };
 
 export const getAddProductsPage = (req, res) => {
   res.render("addProducts");
+  logger.log("info", "Add products page loaded successfully");
 };
 
 export const getEditProductsPage = async (req, res) => {
@@ -117,8 +136,10 @@ export const getEditProductsPage = async (req, res) => {
     }
 
     res.render("editProducts", { products: products[0] });
+    logger.log("info", "Edit products page loaded successfully");
   } catch (error) {
-    console.error("Error fetching product:", error);
+    logger.log("error", error.message);
+    // console.error("Error fetching product:", error);
     res.status(500).send("Internal Server Error");
   }
 };
@@ -141,8 +162,10 @@ export const getAuctionPage = async (req, res) => {
     });
 
     res.render("auctionProducts", { products });
+    logger.log("info", "Auction page loaded successfully");
   } catch (error) {
-    console.error(error);
+    logger.log("error", error.message);
+    // console.error(error);
     res.status(500).json({
       success: false,
       error: error.message,
@@ -152,7 +175,7 @@ export const getAuctionPage = async (req, res) => {
 
 export const getSpecificAuction = async (req, res) => {
   const id = req.params.id;
-  console.log(id);
+  // console.log(id);
 
   try {
     const query = `
@@ -162,12 +185,14 @@ export const getSpecificAuction = async (req, res) => {
     `;
 
     const { rows: products } = await pool.query(query, [id]);
-    console.log(products);
-    console.log(products.name);
+    // console.log(products);
+    // console.log(products.name);
 
     res.render("auctionSingle", { products: products[0] });
+    logger.log("info", "Auction fetched successfully");
   } catch (error) {
-    console.error(error);
+    logger.log("error", error.message);
+    // console.error(error);
     res.status(404).json({
       success: false,
       error: error.message,

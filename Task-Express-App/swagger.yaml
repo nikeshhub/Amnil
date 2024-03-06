@@ -1,0 +1,220 @@
+openapi: 3.0.0
+info:
+  title: Amnil Tasks API with Swagger
+  version: 1.0.0
+  description: Documentation for all the API built for Amnil Technologies NodeJs Internship Program
+paths:
+  /product:
+    post:
+      summary: Add a new product
+      description: Add a new product to the database. Product should contain a name, price, quantity, description and images
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: The name of the product
+                price:
+                  type: number
+                  description: The price of the product
+                quantity:
+                  type: number
+                  description: Total product quantity
+                description:
+                  type: string
+                  description: Description of the product
+                files:
+                  type: string
+                  format: binary
+                  description: Image file(s) of the product
+      x-codegen-request-body-name: formData
+      responses:
+        "200":
+          description: Successfully added product
+        "400":
+          description: Invalid request
+    get:
+      summary: Get all products
+      description: Retrieve a list of all products in the system
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: The ID of the product
+                    name:
+                      type: string
+                      description: The name of the product
+                    price:
+                      type: number
+                      description: The price of the product
+                    description:
+                      type: string
+                      description: Description of the product
+                    images:
+                      type: array
+                      items:
+                        type: string
+                        description: URL(s) of the product image(s)
+        "400":
+          description: Invalid request
+  /product/search:
+    get:
+      summary: Search products
+      description: Search for products based on name, sorting, and filtering criteria
+      parameters:
+        - in: query
+          name: name
+          schema:
+            type: string
+          description: Name of the product to search for
+        - in: query
+          name: sortBy
+          schema:
+            type: string
+            enum: [price, name, any_other_property]
+          description: Property to sort the products by
+        - in: query
+          name: filterBy
+          schema:
+            type: string
+          description: Filter products by a specific property value
+      responses:
+        "200":
+          description: Successfully retrieved products
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: The ID of the product
+                    name:
+                      type: string
+                      description: The name of the product
+                    price:
+                      type: number
+                      description: The price of the product
+                    description:
+                      type: string
+                      description: Description of the product
+                    images:
+                      type: array
+                      items:
+                        type: string
+                        description: URL(s) of the product image(s)
+        "400":
+          description: Invalid request
+  /user/register:
+    post:
+      summary: Add a new user
+      description: Add a new user to the system
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: The name of the user
+                email:
+                  type: string
+                  format: email
+                  description: The email address of the user
+                password:
+                  type: string
+                  description: The password of the user
+                address:
+                  type: string
+                  description: The address of the user
+                phone_number:
+                  type: number
+                  description: The phone number of the user
+                role:
+                  type: string
+                  enum: [admin, customer]
+                  description: The role of the user
+      responses:
+        "200":
+          description: Successfully added user
+        "400":
+          description: Invalid request
+  /user/login:
+    post:
+      summary: User login
+      description: Authenticate a user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: The email of the user
+                password:
+                  type: string
+                  description: The password of the user
+                  minLength: 4
+      responses:
+        "200":
+          description: Successfully authenticated
+        "401":
+          description: Unauthorized - Invalid credentials
+  /product/cart:
+    post:
+      summary: Add product to cart
+      description: Add a product to the user's cart
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - productId
+                - quantity
+              properties:
+                productId:
+                  type: integer
+                  description: The ID of the product to add to cart
+                quantity:
+                  type: integer
+                  description: The quantity of the product to add to cart
+      responses:
+        "200":
+          description: Product added to cart successfully
+        "400":
+          description: Invalid request
+        "401":
+          description: Unauthorized - User authentication failed
+        "500":
+          description: Internal server error
+  /order:
+    post:
+      summary: Make order
+      description: Place an order with the items in the user's cart
+      responses:
+        "200":
+          description: Order placed successfully
+        "400":
+          description: Invalid request - No items in the cart
+        "500":
+          description: Internal server error

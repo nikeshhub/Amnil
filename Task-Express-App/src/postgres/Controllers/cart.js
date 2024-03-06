@@ -1,4 +1,5 @@
 import pool from "../../../db.js";
+import logger from "../../utils/logger.js";
 
 export const addToCart = async (req, res) => {
   try {
@@ -16,10 +17,22 @@ export const addToCart = async (req, res) => {
       [userId, productId, quantity]
     );
 
-    res.send(
-      `<script>alert("Product added to cart successfully!"); window.location.href = "/product";</script>`
-    );
+    if (process.env.RESPONSE_TYPE === "JSON") {
+      return res.json({
+        success: true,
+        message: "Product added to cart successfully",
+      });
+    } else if (process.env.RESPONSE_TYPE === "EJS") {
+      res.send(
+        `<script>alert("Product added to cart successfully!"); window.location.href = "/product";</script>`
+      );
+    } else {
+      logger.log("error", "Invalid response type");
+    }
+
+    logger.log("info", "Product added to cart successfully.");
   } catch (error) {
+    logger.log("error", "Error adding product to cart:", error);
     res.json({ success: false, error: error.message });
   }
 };

@@ -1,2 +1,80 @@
-{"level":"error","message":"relation \"products\" does not exist","timestamp":"2024-03-02T17:31:02.998Z"}
-{"level":"error","message":"relation \"produc\" does not exist","timestamp":"2024-03-02T17:33:29.962Z"}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:11:58.282Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:15:51.941Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:16:04.104Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:16:53.046Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:17:52.258Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:18:04.487Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:19:52.630Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:20:11.601Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:24:11.031Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:25:28.547Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:25:59.146Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:27:05.317Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'data and salt arguments required',
+  timestamp: '2024-03-04T07:27:50.650Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'User already exists',
+  timestamp: '2024-03-04T07:44:09.785Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: "Cannot read properties of undefined (reading 'password')",
+  timestamp: '2024-03-05T08:30:59.796Z'
+}
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: "Cannot read properties of undefined (reading 'password')",
+  timestamp: '2024-03-05T08:31:12.586Z'
+}

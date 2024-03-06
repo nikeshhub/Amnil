@@ -1,35 +1,32 @@
 import pool from "../../../db.js";
+import logger from "../../utils/logger.js";
 
 export const createProduct = async (req, res) => {
   try {
     let { name, description, price, quantity, product_type } = req.body;
-    console.log("Description", description);
-    console.log(price);
-    console.log(quantity);
-    console.log(product_type);
 
     let photos = req.file.filename;
 
-    // let photos = req.files;
-
-    console.log(photos);
-
     const data = [name, price, quantity, description, product_type, photos];
-    console.log(data);
     const query = `INSERT INTO  "product" (name, price, quantity, description, product_type, photos)
       VALUES ($1, $2, $3, $4, $5, $6)
       RETURNING *
       `;
     const result = await pool.query(query, data);
 
-    console.log(result.rows[0]);
+    if (process.env.RESPONSE_TYPE === "JSON") {
+      return res.json({ success: true, data: result.rows[0] });
+    } else if (process.env.RESPONSE_TYPE === "EJS") {
+      res.send(
+        `<script>alert("Product added successfully!"); window.location.href = "/admin/products";</script>`
+      );
+    } else {
+      logger.log("error", "Invalid response type");
+    }
 
-    // console.log(product);
-
-    res.send(
-      `<script>alert("Product added successfully!"); window.location.href = "/admin/products";</script>`
-    );
+    logger.log("info", "Product added successfully.");
   } catch (error) {
+    logger.log("error", error.message);
     res.json({
       success: false,
       error: error.message,
@@ -40,10 +37,6 @@ export const createProduct = async (req, res) => {
 export const searchProducts = async (req, res) => {
   try {
     const { name, sortBy, filterBy } = req.query;
-
-    console.log(name);
-    console.log(sortBy);
-    console.log(filterBy);
 
     let sqlQuery = "SELECT * FROM product";
 
@@ -77,15 +70,31 @@ export const searchProducts = async (req, res) => {
 
     if (products.length === 0) {
       // No products found
-      return res.render("products", {
-        products: [],
-        message: "No products found",
-      });
+      if (process.env.RESPONSE_TYPE === "EJS") {
+        return res.render("products", {
+          products: [],
+          message: "No products found",
+        });
+      } else if (process.env.RESPONSE_TYPE === "JSON") {
+        return res.json({ message: "No products found" });
+      } else {
+        // Handle other response types or fallback
+        return res.status(400).send("Unsupported response type");
+      }
     } else {
       // Products found
-      return res.render("products", { products });
+      if (process.env.RESPONSE_TYPE === "EJS") {
+        res.render("products", { products });
+      } else if (process.env.RESPONSE_TYPE === "JSON") {
+        res.json({ products });
+      } else {
+        // Handle other response types or fallback
+        return res.status(400).send("Unsupported response type");
+      }
+      logger.log("info", "Products fetched successfully");
     }
   } catch (error) {
+    logger.log("error", error.message);
     return res.json(error.message);
   }
 };
@@ -106,7 +115,9 @@ export const deleteProduct = async (req, res) => {
     res.send(
       `<script> alert("Product deleted successfully"); window.location.href = document.referrer; </script>`
     );
+    logger.log("info", "Product deleted successfully");
   } catch (error) {
+    logger.log("error", error.message);
     res.status(500).json({ success: false, error: error.message });
   }
 };
@@ -143,11 +154,13 @@ export const updateProducts = async (req, res) => {
     res.send(
       `<script>alert("Product updated successfully"); window.location.href = "/admin/products";</script>`
     );
+    logger.log("info", "Product updated successfully");
 
-    console.log("Updated Product:", updatedProduct);
+    // console.log("Updated Product:", updatedProduct);
   } catch (error) {
     // Handle errors
-    console.error("Error updating product:", error);
+    logger.log("error", error.message);
+    // console.error("Error updating product:", error);
     res.status(500).json({ success: false, error: error.message });
   }
 };
@@ -179,8 +192,10 @@ export const makeLimitedProducts = async (req, res) => {
       success: true,
       data: updatedProduct[0],
     });
+    logger.log("info", "Product made limited successfully");
   } catch (error) {
-    console.error(error);
+    logger.log("error", error.message);
+    // console.error(error);
     res.status(500).json({ success: false, error: error.message });
   }
 };
@@ -200,20 +215,27 @@ export const bidProducts = async (req, res) => {
     const productToBid = products[0];
 
     if (!productToBid) {
+      logger.log("error", "Product not found");
       return res.send("Product not found");
     }
 
     if (!productToBid.is_limited) {
+      logger.log("error", "Bidding is not available for this product");
       return res.send("Bidding is not available for this product");
     }
 
     if (bidAmount <= productToBid.highest_bid_amount) {
+      logger.log(
+        "error",
+        "Bid amount should be greater than current highest bidding amount"
+      );
       return res.send(
         "<script>alert('Bid amount should be greater than current highest bidding amount');window.location=document.referrer;</script>"
       );
     }
 
     if (new Date() > productToBid.expiry_date) {
+      logger.log("error", "Auction expired");
       return res.send(
         "<script>alert('Auction expired');window.location=document.referrer;</script>"
       );
@@ -235,9 +257,11 @@ export const bidProducts = async (req, res) => {
     return res.send(
       "<script>alert('Bid successful');window.location=document.referrer;</script>"
     );
+    logger.log("info", "Bid successful");
   } catch (error) {
     // Handle errors
-    console.error(error);
+    // console.error(error);
+    logger.log("error", error.message);
     return res.send("Internal server error");
   }
 };

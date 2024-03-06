@@ -1,4 +1,5 @@
 import pool from "../../../db.js";
+import logger from "../../utils/logger.js";
 
 export const makeOrder = async (req, res) => {
   try {
@@ -38,10 +39,19 @@ export const makeOrder = async (req, res) => {
     const deleteCartQuery = "DELETE FROM cart WHERE user_id = $1";
     await pool.query(deleteCartQuery, [userId]);
 
-    res.send(
-      `<script>alert("Thank you for your order! We have received your order. We will notify you again with the shipping times."); window.location.href = "/product";</script>`
-    );
+    if (process.env.RESPONSE_TYPE === "JSON") {
+      return res.json({ success: true, message: "Order placed successfully" });
+    } else if (process.env.RESPONSE_TYPE === "EJS") {
+      res.send(
+        `<script>alert("Thank you for your order! We have received your order. We will notify you again with the shipping times."); window.location.href = "/product";</script>`
+      );
+    } else {
+      logger.log("error", "Invalid response type");
+    }
+
+    logger.log("info", "Order placed successfully.");
   } catch (error) {
+    logger.log("error", "Error placing order:", error);
     res.status(500).json({ success: false, error: error.message });
   }
 };
