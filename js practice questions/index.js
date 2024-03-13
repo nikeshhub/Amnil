@@ -1,3 +1,4 @@
+//all of the answers are commented, to test, that specific code can be uncommmented and run
 //1. Reverse a string without using inbuilt reverse method
 // let reverseString = (input) => {
 //   let reversedString = "";
