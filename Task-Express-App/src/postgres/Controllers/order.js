@@ -4,6 +4,7 @@ import logger from "../../utils/logger.js";
 export const makeOrder = async (req, res) => {
   try {
     const userId = req._id;
+    const order_date = new Date().toISOString().split('T')[0];
 
     const cartItemsQuery =
       "SELECT c.product_id, p.price, c.quantity FROM cart c JOIN product p ON c.product_id = p.id WHERE c.user_id = $1";
@@ -21,8 +22,8 @@ export const makeOrder = async (req, res) => {
     );
 
     // Insert order into the orders table
-    const orderInsertQuery = `INSERT INTO "order" (user_id, total_price) VALUES ($1, $2) RETURNING id`;
-    const orderInsertValues = [userId, totalPrice];
+    const orderInsertQuery = `INSERT INTO "order" (user_id, total_price, order_date) VALUES ($1, $2, $3) RETURNING id`;
+    const orderInsertValues = [userId, totalPrice, order_date];
     const {
       rows: [order],
     } = await pool.query(orderInsertQuery, orderInsertValues);

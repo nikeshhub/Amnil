@@ -1,0 +1,1 @@
+since my cart are deleted after an order is made, i am not able to execite this query properly.

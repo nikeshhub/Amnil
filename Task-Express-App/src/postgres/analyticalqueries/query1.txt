@@ -1,0 +1,14 @@
+tested correctly in pgadmin
+SELECT 
+    p.product_type,
+    SUM(oi.quantity * p.price) AS total_revenue
+FROM 
+    "order" o
+JOIN 
+    order_items oi ON o.id = oi.order_id
+JOIN 
+    product p ON oi.product_id = p.id
+WHERE 
+    o.order_date >= CURRENT_DATE - INTERVAL '1 month'
+GROUP BY 
+    p.product_type;

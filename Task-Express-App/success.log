@@ -3520,3 +3520,382 @@
   message: 'Checking for expiry',
   timestamp: '2024-03-05T09:28:00.220Z'
 }
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-13T06:38:28.428Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-13T06:38:28.451Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:39:00.455Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:40:00.531Z'
+}
+{
+  length: 137,
+  name: 'error',
+  severity: 'ERROR',
+  code: '08P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'postgres.c',
+  line: '1720',
+  routine: 'exec_bind_message',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'Error placing order: bind message supplies 3 parameters, but prepared statement "" requires 2',
+  stack: 'error: bind message supplies 3 parameters, but prepared statement "" requires 2\n' +
+    '    at /Users/nikeshsapkota/Desktop/Amnil/Task-Express-App/node_modules/pg-pool/index.js:45:11\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async makeOrder (file:///Users/nikeshsapkota/Desktop/Amnil/Task-Express-App/src/postgres/Controllers/order.js:29:9)',
+  timestamp: '2024-03-13T06:40:42.289Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:41:00.611Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-13T06:41:12.170Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-13T06:41:12.193Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-13T06:41:14.472Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-13T06:41:14.494Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-13T06:41:15.860Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-13T06:41:15.882Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-13T06:41:38.725Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-13T06:41:38.746Z'
+}
+{
+  length: 205,
+  name: 'error',
+  severity: 'ERROR',
+  code: '22008',
+  detail: undefined,
+  hint: 'Perhaps you need a different "datestyle" setting.',
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $3 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'datetime.c',
+  line: '3985',
+  routine: 'DateTimeParseError',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'Error placing order: date/time field value out of range: "1710312106148"',
+  stack: 'error: date/time field value out of range: "1710312106148"\n' +
+    '    at /Users/nikeshsapkota/Desktop/Amnil/Task-Express-App/node_modules/pg-pool/index.js:45:11\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async makeOrder (file:///Users/nikeshsapkota/Desktop/Amnil/Task-Express-App/src/postgres/Controllers/order.js:29:9)',
+  timestamp: '2024-03-13T06:41:46.153Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:42:00.742Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:43:00.818Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:44:00.898Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Server is running on 8000',
+  timestamp: '2024-03-13T06:44:16.221Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Connected to PostgreSQL ',
+  timestamp: '2024-03-13T06:44:16.243Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:45:00.265Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:46:00.344Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:47:00.413Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:48:00.488Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:49:00.566Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:50:00.641Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:51:00.716Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:52:00.799Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:53:00.876Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:54:00.954Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:55:00.030Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:56:00.104Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:57:00.180Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:58:00.254Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T06:59:00.333Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:00:00.408Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:01:00.477Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:02:00.553Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:03:00.629Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:04:00.701Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:05:00.776Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:06:00.848Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:07:00.926Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:08:00.001Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:09:00.081Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:10:00.158Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:11:00.229Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:12:00.295Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:13:00.369Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:14:00.442Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:15:00.520Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:16:00.589Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:17:00.662Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:18:00.733Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:19:00.807Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:20:00.879Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:21:00.954Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:22:00.025Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:23:00.099Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:24:00.172Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:25:00.243Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:26:00.319Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:27:00.388Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:28:00.456Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:29:00.524Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:30:00.598Z'
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: 'Checking for expiry',
+  timestamp: '2024-03-13T07:31:00.661Z'
+}

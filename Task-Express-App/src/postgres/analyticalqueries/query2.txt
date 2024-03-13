@@ -1,0 +1,49 @@
+tested correctly in pgadmin
+WITH current_year_sales AS (
+    SELECT
+        oi.product_id,
+        SUM(oi.quantity * p.price) AS current_year_sales
+    FROM
+        "order" o
+    JOIN
+        order_items oi ON o.id = oi.order_id
+    JOIN
+        product p ON oi.product_id = p.id
+    WHERE
+        EXTRACT(YEAR FROM o.order_date) = EXTRACT(YEAR FROM CURRENT_DATE)
+    GROUP BY
+        oi.product_id
+),
+previous_year_sales AS (
+    SELECT
+        oi.product_id,
+        SUM(oi.quantity * p.price) AS previous_year_sales
+    FROM
+        "order" o
+    JOIN
+        order_items oi ON o.id = oi.order_id
+    JOIN
+        product p ON oi.product_id = p.id
+    WHERE
+        EXTRACT(YEAR FROM o.order_date) = EXTRACT(YEAR FROM CURRENT_DATE) - 1
+    GROUP BY
+        oi.product_id
+)
+SELECT
+    p.id,
+    p.name,
+    COALESCE(current_year_sales, 0) AS current_year_sales,
+    COALESCE(previous_year_sales, 0) AS previous_year_sales,
+    CASE
+        WHEN previous_year_sales <> 0 THEN 
+            ((current_year_sales - previous_year_sales) / previous_year_sales) * 100
+        ELSE
+            0
+    END AS sales_percentage_change
+FROM
+    product p
+LEFT JOIN
+    current_year_sales ON p.id = current_year_sales.product_id
+LEFT JOIN
+    previous_year_sales ON p.id = previous_year_sales.product_id;
+

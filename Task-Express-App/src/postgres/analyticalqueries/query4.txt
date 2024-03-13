@@ -1,0 +1,1 @@
+i am quite stuck on postGIS, hence there is no geographical data which is why i am unable to complete this query
